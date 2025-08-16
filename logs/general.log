@@ -1,0 +1,633 @@
+[2025-08-15 21:19:01,270] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:01,711] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:01,991] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:24,865] INFO django.server log_message:212 - "GET /admin/inventory/device/ HTTP/1.1" 200 14810
+[2025-08-15 21:19:24,891] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:19:25,015] INFO django.server log_message:212 - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+[2025-08-15 21:19:25,016] INFO django.server log_message:212 - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[2025-08-15 21:19:25,018] INFO django.server log_message:212 - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2025-08-15 21:19:25,022] INFO django.server log_message:212 - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[2025-08-15 21:19:25,025] INFO django.server log_message:212 - "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[2025-08-15 21:19:25,040] INFO django.server log_message:212 - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+[2025-08-15 21:19:25,048] INFO django.server log_message:212 - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+[2025-08-15 21:19:25,049] INFO django.server log_message:212 - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2025-08-15 21:19:25,053] INFO django.server log_message:212 - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[2025-08-15 21:19:25,054] INFO django.server log_message:212 - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+[2025-08-15 21:19:25,057] INFO django.server log_message:212 - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[2025-08-15 21:19:25,063] INFO django.server log_message:212 - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2025-08-15 21:19:33,162] INFO django.server log_message:212 - "GET /admin/inventory/device/add/ HTTP/1.1" 200 56628
+[2025-08-15 21:19:33,172] INFO django.server log_message:212 - "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+[2025-08-15 21:19:33,177] INFO django.server log_message:212 - "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+[2025-08-15 21:19:33,177] INFO django.server log_message:212 - "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+[2025-08-15 21:19:33,177] INFO django.server log_message:212 - "GET /static/admin/css/autocomplete.css HTTP/1.1" 200 9114
+[2025-08-15 21:19:33,178] INFO django.server log_message:212 - "GET /static/admin/css/vendor/select2/select2.css HTTP/1.1" 200 17358
+[2025-08-15 21:19:33,181] INFO django.server log_message:212 - "GET /static/admin/js/vendor/select2/i18n/en.js HTTP/1.1" 200 844
+[2025-08-15 21:19:33,184] INFO django.server log_message:212 - "GET /static/admin/js/autocomplete.js HTTP/1.1" 200 1060
+[2025-08-15 21:19:33,184] INFO django.server log_message:212 - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+[2025-08-15 21:19:33,185] INFO django.server log_message:212 - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[2025-08-15 21:19:33,185] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:19:33,186] INFO django.server log_message:212 - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[2025-08-15 21:19:33,186] INFO django.server log_message:212 - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[2025-08-15 21:19:33,186] INFO django.server log_message:212 - "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+[2025-08-15 21:19:33,187] INFO django.server log_message:212 - "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.1" 200 173566
+[2025-08-15 21:19:33,191] INFO django.server log_message:212 - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[2025-08-15 21:19:33,191] INFO django.server log_message:212 - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[2025-08-15 21:19:33,224] INFO django.server log_message:212 - "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+[2025-08-15 21:19:33,235] INFO django.server log_message:212 - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[2025-08-15 21:19:33,236] INFO django.server log_message:212 - "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[2025-08-15 21:19:36,709] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:19:37,006] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:19:37,199] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:37,250] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:19:37,436] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:37,670] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:45,657] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:19:45,877] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:19:46,107] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:19:46,188] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:46,349] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:46,507] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:57,736] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:19:57,872] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:19:58,088] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:19:58,137] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:58,272] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:19:58,515] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:13,804] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:13,958] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:14,172] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:14,362] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:14,451] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:14,662] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:16,972] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:17,370] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:17,693] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:17,795] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:18,085] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:18,180] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:28,896] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:29,342] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:29,618] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:29,700] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:30,015] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:30,086] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:31,275] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:31,349] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:31,626] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:31,710] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:31,767] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:32,027] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:40,195] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:40,227] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:40,470] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:40,723] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:40,731] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:40,919] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:44,073] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:44,076] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:44,233] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:20:44,657] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:44,667] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:20:44,799] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:03,509] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:21:03,520] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:21:03,526] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:21:03,940] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:03,953] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:03,953] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:14,499] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:14,562] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:14,562] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:14,987] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:15,034] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:15,035] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:38,011] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:38,017] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:38,531] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:38,531] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:38,862] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:39,252] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:42,552] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:42,922] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:42,924] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:43,060] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:43,380] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:43,386] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:52,555] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:52,970] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:52,975] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:53,036] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:53,379] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:53,384] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:54,319] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:54,675] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:54,678] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\api_views.py changed, reloading.
+[2025-08-15 21:21:54,761] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:55,100] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:21:55,102] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:22:22,875] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:22:23,287] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:22:23,314] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:22:23,498] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:22:23,833] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:22:23,868] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:25:45,272] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:26:21,531] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:26:21,637] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:26:21,637] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:26:21,759] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\models.py changed, reloading.
+[2025-08-15 21:26:22,047] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:26:22,145] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:26:22,146] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:26:22,263] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:28:06,913] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/device/add/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:06,986] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/device/add/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.075s
+[2025-08-15 21:28:06,988] INFO django.server log_message:212 - "GET /admin/inventory/device/add/ HTTP/1.1" 200 56628
+[2025-08-15 21:28:06,998] INFO django.server log_message:212 - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-08-15 21:28:06,998] INFO django.server log_message:212 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-08-15 21:28:07,001] INFO django.server log_message:212 - "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2025-08-15 21:28:07,001] INFO django.server log_message:212 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-08-15 21:28:07,001] INFO django.server log_message:212 - "GET /static/admin/css/vendor/select2/select2.css HTTP/1.1" 304 0
+[2025-08-15 21:28:07,001] INFO django.server log_message:212 - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-08-15 21:28:07,002] INFO django.server log_message:212 - "GET /static/admin/css/autocomplete.css HTTP/1.1" 304 0
+[2025-08-15 21:28:07,003] INFO django.server log_message:212 - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,004] INFO django.server log_message:212 - "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,004] INFO django.server log_message:212 - "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,004] INFO django.server log_message:212 - "GET /static/admin/js/collapse.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,004] INFO django.server log_message:212 - "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2025-08-15 21:28:07,005] INFO django.server log_message:212 - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,007] INFO django.server log_message:212 - "GET /static/admin/js/vendor/select2/i18n/en.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,008] INFO django.server log_message:212 - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,008] INFO django.server log_message:212 - "GET /static/admin/js/autocomplete.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,008] INFO django.server log_message:212 - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,009] INFO django.server log_message:212 - "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,009] INFO django.server log_message:212 - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,011] INFO django.server log_message:212 - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,011] INFO django.server log_message:212 - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,012] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:07,012] INFO django.server log_message:212 - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:07,012] INFO django.server log_message:212 - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,013] INFO django.server log_message:212 - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,014] INFO django.server log_message:212 - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:07,015] INFO django.server log_message:212 - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:07,017] INFO django.server log_message:212 - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,032] INFO django.server log_message:212 - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:07,032] INFO django.server log_message:212 - "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,033] INFO django.server log_message:212 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,033] INFO django.server log_message:212 - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-08-15 21:28:07,058] INFO django.server log_message:212 - "GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:07,064] INFO django.server log_message:212 - "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:07,064] INFO django.server log_message:212 - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:10,374] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:10,381] WARNING inventory process_response:54 - Request completed with error - Method: GET, Path: /admin, Status: 404, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.009s
+[2025-08-15 21:28:10,383] INFO django.server log_message:212 - "GET /admin HTTP/1.1" 301 0
+[2025-08-15 21:28:10,389] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:10,396] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.009s
+[2025-08-15 21:28:10,396] INFO django.server log_message:212 - "GET /admin/ HTTP/1.1" 200 12166
+[2025-08-15 21:28:10,408] INFO django.server log_message:212 - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-08-15 21:28:16,212] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/networkdevice/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:16,226] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/networkdevice/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.017s
+[2025-08-15 21:28:16,226] INFO django.server log_message:212 - "GET /admin/inventory/networkdevice/ HTTP/1.1" 200 15351
+[2025-08-15 21:28:16,242] INFO django.server log_message:212 - "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-08-15 21:28:16,244] INFO django.server log_message:212 - "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:16,246] INFO django.server log_message:212 - "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-08-15 21:28:16,247] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:16,255] INFO django.server log_message:212 - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-08-15 21:28:18,414] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/peripheral/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:18,424] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/peripheral/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.012s
+[2025-08-15 21:28:18,424] INFO django.server log_message:212 - "GET /admin/inventory/peripheral/ HTTP/1.1" 200 15694
+[2025-08-15 21:28:18,445] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:19,830] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/device/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:19,842] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/device/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.016s
+[2025-08-15 21:28:19,843] INFO django.server log_message:212 - "GET /admin/inventory/device/ HTTP/1.1" 200 14810
+[2025-08-15 21:28:19,854] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:21,837] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/category/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:21,843] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/category/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.008s
+[2025-08-15 21:28:21,843] INFO django.server log_message:212 - "GET /admin/inventory/category/ HTTP/1.1" 200 11335
+[2025-08-15 21:28:21,869] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:23,709] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/audititem/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:23,723] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/audititem/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.017s
+[2025-08-15 21:28:23,723] INFO django.server log_message:212 - "GET /admin/inventory/audititem/ HTTP/1.1" 200 13470
+[2025-08-15 21:28:23,743] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:26,355] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/auth/group/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:26,364] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/auth/group/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.011s
+[2025-08-15 21:28:26,365] INFO django.server log_message:212 - "GET /admin/auth/group/ HTTP/1.1" 200 12447
+[2025-08-15 21:28:26,383] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:28,540] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/auth/user/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:28,548] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/auth/user/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.010s
+[2025-08-15 21:28:28,548] INFO django.server log_message:212 - "GET /admin/auth/user/ HTTP/1.1" 200 15188
+[2025-08-15 21:28:28,562] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:28,623] INFO django.server log_message:212 - "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[2025-08-15 21:28:28,630] INFO django.server log_message:212 - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2025-08-15 21:28:28,631] INFO django.server log_message:212 - "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2025-08-15 21:28:31,067] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/category/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:31,073] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/category/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.008s
+[2025-08-15 21:28:31,074] INFO django.server log_message:212 - "GET /admin/inventory/category/ HTTP/1.1" 200 11335
+[2025-08-15 21:28:31,093] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:32,173] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/computer/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:32,184] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/computer/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.015s
+[2025-08-15 21:28:32,184] INFO django.server log_message:212 - "GET /admin/inventory/computer/ HTTP/1.1" 200 15887
+[2025-08-15 21:28:32,201] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:33,454] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/device/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:33,466] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/device/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.016s
+[2025-08-15 21:28:33,467] INFO django.server log_message:212 - "GET /admin/inventory/device/ HTTP/1.1" 200 14810
+[2025-08-15 21:28:33,486] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:35,272] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/location/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:35,280] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/location/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.011s
+[2025-08-15 21:28:35,281] INFO django.server log_message:212 - "GET /admin/inventory/location/ HTTP/1.1" 200 11805
+[2025-08-15 21:28:35,296] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:35,976] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/maintenancerecord/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:35,985] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/maintenancerecord/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.011s
+[2025-08-15 21:28:35,986] INFO django.server log_message:212 - "GET /admin/inventory/maintenancerecord/ HTTP/1.1" 200 14775
+[2025-08-15 21:28:36,005] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:36,722] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/networkdevice/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:36,731] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/networkdevice/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.010s
+[2025-08-15 21:28:36,731] INFO django.server log_message:212 - "GET /admin/inventory/networkdevice/ HTTP/1.1" 200 15351
+[2025-08-15 21:28:36,754] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:37,402] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/peripheral/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:37,411] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/peripheral/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.012s
+[2025-08-15 21:28:37,411] INFO django.server log_message:212 - "GET /admin/inventory/peripheral/ HTTP/1.1" 200 15694
+[2025-08-15 21:28:37,431] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:38,088] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/software/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:38,095] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/software/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.010s
+[2025-08-15 21:28:38,095] INFO django.server log_message:212 - "GET /admin/inventory/software/ HTTP/1.1" 200 14277
+[2025-08-15 21:28:38,122] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:38,795] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/softwareinstallation/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:38,804] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/softwareinstallation/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.010s
+[2025-08-15 21:28:38,804] INFO django.server log_message:212 - "GET /admin/inventory/softwareinstallation/ HTTP/1.1" 200 12369
+[2025-08-15 21:28:38,819] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:39,551] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/inventory/vendor/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:39,557] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/inventory/vendor/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.009s
+[2025-08-15 21:28:39,558] INFO django.server log_message:212 - "GET /admin/inventory/vendor/ HTTP/1.1" 200 12226
+[2025-08-15 21:28:39,576] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:28:41,341] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/auth/group/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:28:41,346] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/auth/group/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.007s
+[2025-08-15 21:28:41,347] INFO django.server log_message:212 - "GET /admin/auth/group/ HTTP/1.1" 200 12447
+[2025-08-15 21:28:41,361] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:35:07,182] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:35:07,182] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:35:07,190] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.007s
+[2025-08-15 21:35:07,190] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.007s
+[2025-08-15 21:35:07,190] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.007s
+[2025-08-15 21:35:07,195] ERROR inventory log_error:129 - Error in dashboard view - User: admin (ID: 1), IP: 127.0.0.1, Error: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+Traceback: Traceback (most recent call last):
+  File "C:\proj\example\inventory\views.py", line 101, in dashboard
+    return render(request, 'inventory/dashboard.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\proj\example\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+
+[2025-08-15 21:35:07,196] ERROR inventory.views dashboard:106 - Dashboard error after 0.011s: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+[2025-08-15 21:35:07,196] ERROR inventory process_exception:83 - Request exception - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1, Exception: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name., Response Time: 0.018s
+[2025-08-15 21:35:07,262] WARNING inventory process_response:54 - Request completed with error - Method: GET, Path: /, Status: 500, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.084s
+[2025-08-15 21:35:07,263] ERROR django.server log_message:212 - "GET / HTTP/1.1" 500 262085
+[2025-08-15 21:36:54,683] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:54,737] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:55,115] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:55,203] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:36:55,228] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:36:55,527] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:36:55,570] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:55,975] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:36:58,260] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:58,552] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:58,574] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:58,711] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:36:58,848] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\urls.py changed, reloading.
+[2025-08-15 21:36:59,108] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:36:59,108] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:36:59,395] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:17,493] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:17,944] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:17,948] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:17,999] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:18,118] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:18,363] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:18,364] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:18,528] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:20,693] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:20,695] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:20,803] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:21,111] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:21,112] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:21,210] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:21,328] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\views.py changed, reloading.
+[2025-08-15 21:37:21,865] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:24,478] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\urls.py changed, reloading.
+[2025-08-15 21:37:24,482] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\urls.py changed, reloading.
+[2025-08-15 21:37:24,552] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\urls.py changed, reloading.
+[2025-08-15 21:37:24,972] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:24,972] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:25,009] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:25,228] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\inventory\urls.py changed, reloading.
+[2025-08-15 21:37:25,590] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:40,676] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:37:42,438] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:37:42,446] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.008s
+[2025-08-15 21:37:42,446] INFO django.server log_message:212 - "GET / HTTP/1.1" 302 0
+[2025-08-15 21:37:42,447] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:37:42,448] ERROR inventory process_exception:83 - Request exception - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1, Exception: registration/login.html, Response Time: 0.002s
+[2025-08-15 21:37:42,476] WARNING inventory process_response:54 - Request completed with error - Method: GET, Path: /accounts/login/, Status: 500, User: Anonymous, IP: 127.0.0.1, Response Time: 0.029s
+[2025-08-15 21:37:42,477] ERROR django.server log_message:212 - "GET /accounts/login/?next=/ HTTP/1.1" 500 88539
+[2025-08-15 21:38:05,829] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:06,358] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:06,499] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:06,501] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:06,511] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:06,626] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:06,920] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:06,923] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:06,931] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:07,040] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:09,277] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:09,281] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:09,282] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:09,336] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:09,669] INFO django.utils.autoreload trigger_reload:266 - C:\proj\example\it_inventory\settings.py changed, reloading.
+[2025-08-15 21:38:09,704] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:09,705] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:09,768] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:10,235] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:20,431] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:38:24,112] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:38:24,119] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.008s
+[2025-08-15 21:38:24,120] INFO django.server log_message:212 - "GET / HTTP/1.1" 302 0
+[2025-08-15 21:38:24,120] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:38:24,138] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /accounts/login/, Status: 200, User: Anonymous, IP: 127.0.0.1, Response Time: 0.018s
+[2025-08-15 21:38:24,139] INFO django.server log_message:212 - "GET /accounts/login/?next=/ HTTP/1.1" 200 8385
+[2025-08-15 21:39:08,518] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:39:08,518] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.000s
+[2025-08-15 21:39:08,518] INFO django.server log_message:212 - "GET / HTTP/1.1" 302 0
+[2025-08-15 21:39:08,519] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:39:08,521] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /accounts/login/, Status: 200, User: Anonymous, IP: 127.0.0.1, Response Time: 0.002s
+[2025-08-15 21:39:08,522] INFO django.server log_message:212 - "GET /accounts/login/?next=/ HTTP/1.1" 200 8385
+[2025-08-15 21:39:50,983] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:39:50,983] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:39:50,988] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.005s
+[2025-08-15 21:39:50,988] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.005s
+[2025-08-15 21:39:50,988] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.005s
+[2025-08-15 21:39:50,995] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.014s
+[2025-08-15 21:39:50,995] INFO django.server log_message:212 - "GET / HTTP/1.1" 200 13598
+[2025-08-15 21:39:56,863] INFO inventory process_request:25 - Request started - Method: GET, Path: /devices/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:39:56,868] INFO inventory.views get_context_data:138 - Device list context created - Total: 0, Active: 0
+[2025-08-15 21:39:56,868] INFO inventory.views log_view_access:147 - View Access - View: device_list, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.005s
+[2025-08-15 21:39:56,868] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: device_list_access, IP: Unknown, Details: Response time: 0.005s
+[2025-08-15 21:39:56,868] INFO inventory.views dispatch:154 - Device list accessed successfully in 0.005s
+[2025-08-15 21:39:56,876] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /devices/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.017s
+[2025-08-15 21:39:56,876] INFO django.server log_message:212 - "GET /devices/ HTTP/1.1" 200 15754
+[2025-08-15 21:39:59,593] INFO inventory process_request:25 - Request started - Method: GET, Path: /devices/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:39:59,596] INFO inventory.views get_context_data:138 - Device list context created - Total: 0, Active: 0
+[2025-08-15 21:39:59,596] INFO inventory.views log_view_access:147 - View Access - View: device_list, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.003s
+[2025-08-15 21:39:59,596] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: device_list_access, IP: Unknown, Details: Response time: 0.003s
+[2025-08-15 21:39:59,597] INFO inventory.views dispatch:154 - Device list accessed successfully in 0.003s
+[2025-08-15 21:39:59,600] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /devices/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.009s
+[2025-08-15 21:39:59,603] INFO django.server log_message:212 - "GET /devices/ HTTP/1.1" 200 15754
+[2025-08-15 21:40:00,486] INFO inventory process_request:25 - Request started - Method: GET, Path: /software/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:00,490] ERROR inventory process_exception:83 - Request exception - Method: GET, Path: /software/, User: admin (ID: 1), IP: 127.0.0.1, Exception: inventory/software_list.html, inventory/software_filter.html, Response Time: 0.006s
+[2025-08-15 21:40:00,515] WARNING inventory process_response:54 - Request completed with error - Method: GET, Path: /software/, Status: 500, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.030s
+[2025-08-15 21:40:00,515] ERROR django.server log_message:212 - "GET /software/ HTTP/1.1" 500 94804
+[2025-08-15 21:40:18,057] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:18,058] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:40:18,062] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.004s
+[2025-08-15 21:40:18,062] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.004s
+[2025-08-15 21:40:18,062] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.004s
+[2025-08-15 21:40:18,065] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.010s
+[2025-08-15 21:40:18,066] INFO django.server log_message:212 - "GET / HTTP/1.1" 200 13234
+[2025-08-15 21:40:25,476] INFO inventory process_request:25 - Request started - Method: GET, Path: /devices/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:25,482] INFO inventory.views get_context_data:138 - Device list context created - Total: 0, Active: 0
+[2025-08-15 21:40:25,482] INFO inventory.views log_view_access:147 - View Access - View: device_list, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.006s
+[2025-08-15 21:40:25,482] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: device_list_access, IP: Unknown, Details: Response time: 0.006s
+[2025-08-15 21:40:25,483] INFO inventory.views dispatch:154 - Device list accessed successfully in 0.006s
+[2025-08-15 21:40:25,499] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /devices/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.027s
+[2025-08-15 21:40:25,499] INFO django.server log_message:212 - "GET /devices/ HTTP/1.1" 200 15754
+[2025-08-15 21:40:30,429] INFO inventory process_request:25 - Request started - Method: GET, Path: /software/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:30,449] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /software/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.022s
+[2025-08-15 21:40:30,450] INFO django.server log_message:212 - "GET /software/ HTTP/1.1" 200 16972
+[2025-08-15 21:40:32,065] INFO inventory process_request:25 - Request started - Method: GET, Path: /maintenance/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:32,068] ERROR inventory process_exception:83 - Request exception - Method: GET, Path: /maintenance/, User: admin (ID: 1), IP: 127.0.0.1, Exception: inventory/maintenance_list.html, inventory/maintenancerecord_filter.html, Response Time: 0.006s
+[2025-08-15 21:40:32,079] WARNING inventory process_response:54 - Request completed with error - Method: GET, Path: /maintenance/, Status: 500, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.017s
+[2025-08-15 21:40:32,081] ERROR django.server log_message:212 - "GET /maintenance/ HTTP/1.1" 500 95120
+[2025-08-15 21:40:37,054] INFO inventory process_request:25 - Request started - Method: GET, Path: /maintenance/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:37,059] ERROR inventory process_exception:83 - Request exception - Method: GET, Path: /maintenance/, User: admin (ID: 1), IP: 127.0.0.1, Exception: inventory/maintenance_list.html, inventory/maintenancerecord_filter.html, Response Time: 0.009s
+[2025-08-15 21:40:37,070] WARNING inventory process_response:54 - Request completed with error - Method: GET, Path: /maintenance/, Status: 500, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.020s
+[2025-08-15 21:40:37,071] ERROR django.server log_message:212 - "GET /maintenance/ HTTP/1.1" 500 95120
+[2025-08-15 21:40:39,369] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:39,370] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:40:39,377] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.007s
+[2025-08-15 21:40:39,377] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.007s
+[2025-08-15 21:40:39,378] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.007s
+[2025-08-15 21:40:39,387] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.022s
+[2025-08-15 21:40:39,388] INFO django.server log_message:212 - "GET / HTTP/1.1" 200 13234
+[2025-08-15 21:40:40,049] INFO inventory process_request:25 - Request started - Method: GET, Path: /devices/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:40,056] INFO inventory.views get_context_data:138 - Device list context created - Total: 0, Active: 0
+[2025-08-15 21:40:40,056] INFO inventory.views log_view_access:147 - View Access - View: device_list, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.006s
+[2025-08-15 21:40:40,056] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: device_list_access, IP: Unknown, Details: Response time: 0.006s
+[2025-08-15 21:40:40,056] INFO inventory.views dispatch:154 - Device list accessed successfully in 0.006s
+[2025-08-15 21:40:40,068] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /devices/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.024s
+[2025-08-15 21:40:40,069] INFO django.server log_message:212 - "GET /devices/ HTTP/1.1" 200 15754
+[2025-08-15 21:40:40,725] INFO inventory process_request:25 - Request started - Method: GET, Path: /software/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:40,743] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /software/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.019s
+[2025-08-15 21:40:40,744] INFO django.server log_message:212 - "GET /software/ HTTP/1.1" 200 16972
+[2025-08-15 21:40:46,426] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:40:46,427] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:40:46,431] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.004s
+[2025-08-15 21:40:46,431] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.004s
+[2025-08-15 21:40:46,432] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.004s
+[2025-08-15 21:40:46,436] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.013s
+[2025-08-15 21:40:46,436] INFO django.server log_message:212 - "GET / HTTP/1.1" 200 13234
+[2025-08-15 21:42:41,928] INFO inventory process_request:25 - Request started - Method: GET, Path: /software/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:42:41,929] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /software/, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.001s
+[2025-08-15 21:42:41,929] INFO django.server log_message:212 - "GET /software/ HTTP/1.1" 302 0
+[2025-08-15 21:42:41,929] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:42:41,935] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /accounts/login/, Status: 200, User: Anonymous, IP: 127.0.0.1, Response Time: 0.006s
+[2025-08-15 21:42:41,936] INFO django.server log_message:212 - "GET /accounts/login/?next=/software/ HTTP/1.1" 200 8385
+[2025-08-15 21:42:59,115] INFO django.utils.autoreload run_with_reloader:668 - Watching for file changes with StatReloader
+[2025-08-15 21:43:01,868] INFO inventory process_request:25 - Request started - Method: GET, Path: /software/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:43:01,868] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /software/, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.000s
+[2025-08-15 21:43:01,868] INFO django.server log_message:212 - "GET /software/ HTTP/1.1" 302 0
+[2025-08-15 21:43:01,869] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:43:01,871] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /accounts/login/, Status: 200, User: Anonymous, IP: 127.0.0.1, Response Time: 0.002s
+[2025-08-15 21:43:01,872] INFO django.server log_message:212 - "GET /accounts/login/?next=/software/ HTTP/1.1" 200 8385
+[2025-08-15 21:43:06,185] INFO inventory process_request:25 - Request started - Method: GET, Path: /maintenance/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:43:06,185] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /maintenance/, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.000s
+[2025-08-15 21:43:06,186] INFO django.server log_message:212 - "GET /maintenance/ HTTP/1.1" 302 0
+[2025-08-15 21:43:06,187] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:43:06,188] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /accounts/login/, Status: 200, User: Anonymous, IP: 127.0.0.1, Response Time: 0.001s
+[2025-08-15 21:43:06,189] INFO django.server log_message:212 - "GET /accounts/login/?next=/maintenance/ HTTP/1.1" 200 8385
+[2025-08-15 21:44:19,149] INFO inventory process_request:25 - Request started - Method: GET, Path: /categories/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:44:19,150] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /categories/, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.001s
+[2025-08-15 21:44:19,150] INFO django.server log_message:212 - "GET /categories/ HTTP/1.1" 302 0
+[2025-08-15 21:44:19,151] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:44:19,157] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /accounts/login/, Status: 200, User: Anonymous, IP: 127.0.0.1, Response Time: 0.006s
+[2025-08-15 21:44:19,158] INFO django.server log_message:212 - "GET /accounts/login/?next=/categories/ HTTP/1.1" 200 8385
+[2025-08-15 21:44:22,257] INFO inventory process_request:25 - Request started - Method: GET, Path: /search/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:44:22,259] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /search/, Status: 302, User: Anonymous, IP: 127.0.0.1, Response Time: 0.001s
+[2025-08-15 21:44:22,259] INFO django.server log_message:212 - "GET /search/ HTTP/1.1" 302 0
+[2025-08-15 21:44:22,260] INFO inventory process_request:25 - Request started - Method: GET, Path: /accounts/login/, User: Anonymous, IP: 127.0.0.1
+[2025-08-15 21:44:22,262] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /accounts/login/, Status: 200, User: Anonymous, IP: 127.0.0.1, Response Time: 0.002s
+[2025-08-15 21:44:22,262] INFO django.server log_message:212 - "GET /accounts/login/?next=/search/ HTTP/1.1" 200 8385
+[2025-08-15 21:46:20,839] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:20,840] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:46:20,843] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.003s
+[2025-08-15 21:46:20,844] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.003s
+[2025-08-15 21:46:20,844] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.003s
+[2025-08-15 21:46:20,849] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.012s
+[2025-08-15 21:46:20,850] INFO django.server log_message:212 - "GET / HTTP/1.1" 200 13234
+[2025-08-15 21:46:23,542] INFO inventory process_request:25 - Request started - Method: GET, Path: /devices/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:23,545] INFO inventory.views get_context_data:138 - Device list context created - Total: 0, Active: 0
+[2025-08-15 21:46:23,545] INFO inventory.views log_view_access:147 - View Access - View: device_list, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.003s
+[2025-08-15 21:46:23,545] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: device_list_access, IP: Unknown, Details: Response time: 0.003s
+[2025-08-15 21:46:23,546] INFO inventory.views dispatch:154 - Device list accessed successfully in 0.003s
+[2025-08-15 21:46:23,552] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /devices/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.013s
+[2025-08-15 21:46:23,552] INFO django.server log_message:212 - "GET /devices/ HTTP/1.1" 200 15754
+[2025-08-15 21:46:25,886] INFO inventory process_request:25 - Request started - Method: GET, Path: /software/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:25,899] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /software/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.015s
+[2025-08-15 21:46:25,901] INFO django.server log_message:212 - "GET /software/ HTTP/1.1" 200 16972
+[2025-08-15 21:46:27,621] INFO inventory process_request:25 - Request started - Method: GET, Path: /maintenance/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:27,640] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /maintenance/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.022s
+[2025-08-15 21:46:27,640] INFO django.server log_message:212 - "GET /maintenance/ HTTP/1.1" 200 15371
+[2025-08-15 21:46:29,091] INFO inventory process_request:25 - Request started - Method: GET, Path: /categories/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:29,096] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /categories/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.006s
+[2025-08-15 21:46:29,097] INFO django.server log_message:212 - "GET /categories/ HTTP/1.1" 200 7459
+[2025-08-15 21:46:31,142] INFO inventory process_request:25 - Request started - Method: GET, Path: /locations/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:31,145] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /locations/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.007s
+[2025-08-15 21:46:31,146] INFO django.server log_message:212 - "GET /locations/ HTTP/1.1" 200 7458
+[2025-08-15 21:46:33,243] INFO inventory process_request:25 - Request started - Method: GET, Path: /vendors/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:33,245] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /vendors/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.004s
+[2025-08-15 21:46:33,246] INFO django.server log_message:212 - "GET /vendors/ HTTP/1.1" 200 7451
+[2025-08-15 21:46:34,496] INFO inventory process_request:25 - Request started - Method: GET, Path: /search/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:34,498] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /search/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.004s
+[2025-08-15 21:46:34,499] INFO django.server log_message:212 - "GET /search/ HTTP/1.1" 200 7960
+[2025-08-15 21:46:36,431] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:36,442] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.013s
+[2025-08-15 21:46:36,443] INFO django.server log_message:212 - "GET /admin/ HTTP/1.1" 200 12166
+[2025-08-15 21:46:36,463] INFO django.server log_message:212 - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-08-15 21:46:36,466] INFO django.server log_message:212 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-08-15 21:46:36,467] INFO django.server log_message:212 - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-08-15 21:46:36,467] INFO django.server log_message:212 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-08-15 21:46:36,469] INFO django.server log_message:212 - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-08-15 21:46:36,469] INFO django.server log_message:212 - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-08-15 21:46:36,470] INFO django.server log_message:212 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-08-15 21:46:36,472] INFO django.server log_message:212 - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-08-15 21:46:36,472] INFO django.server log_message:212 - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-08-15 21:46:40,661] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:40,662] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:46:40,666] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.004s
+[2025-08-15 21:46:40,666] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.004s
+[2025-08-15 21:46:40,666] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.004s
+[2025-08-15 21:46:40,668] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.011s
+[2025-08-15 21:46:40,669] INFO django.server log_message:212 - "GET / HTTP/1.1" 200 13234
+[2025-08-15 21:46:43,716] INFO inventory process_request:25 - Request started - Method: GET, Path: /devices/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:43,719] INFO inventory.views get_context_data:138 - Device list context created - Total: 0, Active: 0
+[2025-08-15 21:46:43,719] INFO inventory.views log_view_access:147 - View Access - View: device_list, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.002s
+[2025-08-15 21:46:43,719] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: device_list_access, IP: Unknown, Details: Response time: 0.002s
+[2025-08-15 21:46:43,719] INFO inventory.views dispatch:154 - Device list accessed successfully in 0.002s
+[2025-08-15 21:46:43,725] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /devices/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.011s
+[2025-08-15 21:46:43,725] INFO django.server log_message:212 - "GET /devices/ HTTP/1.1" 200 15754
+[2025-08-15 21:46:44,830] INFO inventory process_request:25 - Request started - Method: GET, Path: /software/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:44,839] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /software/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.012s
+[2025-08-15 21:46:44,841] INFO django.server log_message:212 - "GET /software/ HTTP/1.1" 200 16972
+[2025-08-15 21:46:45,555] INFO inventory process_request:25 - Request started - Method: GET, Path: /maintenance/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:45,567] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /maintenance/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.014s
+[2025-08-15 21:46:45,568] INFO django.server log_message:212 - "GET /maintenance/ HTTP/1.1" 200 15371
+[2025-08-15 21:46:46,527] INFO inventory process_request:25 - Request started - Method: GET, Path: /categories/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:46,529] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /categories/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.005s
+[2025-08-15 21:46:46,529] INFO django.server log_message:212 - "GET /categories/ HTTP/1.1" 200 7459
+[2025-08-15 21:46:47,243] INFO inventory process_request:25 - Request started - Method: GET, Path: /locations/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:47,246] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /locations/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.007s
+[2025-08-15 21:46:47,247] INFO django.server log_message:212 - "GET /locations/ HTTP/1.1" 200 7458
+[2025-08-15 21:46:48,092] INFO inventory process_request:25 - Request started - Method: GET, Path: /vendors/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:48,094] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /vendors/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.005s
+[2025-08-15 21:46:48,095] INFO django.server log_message:212 - "GET /vendors/ HTTP/1.1" 200 7451
+[2025-08-15 21:46:48,758] INFO inventory process_request:25 - Request started - Method: GET, Path: /search/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:48,759] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /search/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.004s
+[2025-08-15 21:46:48,759] INFO django.server log_message:212 - "GET /search/ HTTP/1.1" 200 7960
+[2025-08-15 21:46:50,123] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:50,130] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.008s
+[2025-08-15 21:46:50,130] INFO django.server log_message:212 - "GET /admin/ HTTP/1.1" 200 12166
+[2025-08-15 21:46:54,189] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/auth/group/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:54,202] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/auth/group/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.016s
+[2025-08-15 21:46:54,202] INFO django.server log_message:212 - "GET /admin/auth/group/ HTTP/1.1" 200 12447
+[2025-08-15 21:46:54,216] INFO django.server log_message:212 - "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-08-15 21:46:54,220] INFO django.server log_message:212 - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,220] INFO django.server log_message:212 - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,220] INFO django.server log_message:212 - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,221] INFO django.server log_message:212 - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,221] INFO django.server log_message:212 - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,223] INFO django.server log_message:212 - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,224] INFO django.server log_message:212 - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,224] INFO django.server log_message:212 - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,224] INFO django.server log_message:212 - "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[2025-08-15 21:46:54,226] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:46:54,227] INFO django.server log_message:212 - "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-08-15 21:46:54,233] INFO django.server log_message:212 - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-08-15 21:46:56,840] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/auth/group/1/change/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:46:56,858] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/auth/group/1/change/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.019s
+[2025-08-15 21:46:56,858] INFO django.server log_message:212 - "GET /admin/auth/group/1/change/ HTTP/1.1" 200 18558
+[2025-08-15 21:46:56,869] INFO django.server log_message:212 - "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2025-08-15 21:46:56,876] INFO django.server log_message:212 - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2025-08-15 21:46:56,876] INFO django.server log_message:212 - "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2025-08-15 21:46:56,878] INFO django.server log_message:212 - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[2025-08-15 21:46:56,909] INFO django.server log_message:212 - "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[2025-08-15 21:46:56,909] INFO django.server log_message:212 - "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+[2025-08-15 21:46:56,911] INFO django.server log_message:212 - "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2025-08-15 21:46:56,922] INFO django.server log_message:212 - "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[2025-08-15 21:47:02,972] INFO inventory process_request:25 - Request started - Method: GET, Path: /admin/, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:47:02,978] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /admin/, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.008s
+[2025-08-15 21:47:02,978] INFO django.server log_message:212 - "GET /admin/ HTTP/1.1" 200 12166
+[2025-08-15 21:47:04,023] INFO inventory process_request:25 - Request started - Method: GET, Path: /, User: admin (ID: 1), IP: 127.0.0.1
+[2025-08-15 21:47:04,023] INFO inventory.views dashboard:38 - Dashboard accessed by user: admin
+[2025-08-15 21:47:04,028] INFO inventory.views log_view_access:147 - View Access - View: dashboard, Method: GET, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.005s
+[2025-08-15 21:47:04,028] INFO inventory log_user_action:52 - User Action - User: admin (ID: 1), Action: dashboard_access, IP: Unknown, Details: Response time: 0.005s
+[2025-08-15 21:47:04,028] INFO inventory.views dashboard:100 - Dashboard rendered successfully in 0.005s
+[2025-08-15 21:47:04,031] INFO inventory process_response:60 - Request completed successfully - Method: GET, Path: /, Status: 200, User: admin (ID: 1), IP: 127.0.0.1, Response Time: 0.010s
+[2025-08-15 21:47:04,031] INFO django.server log_message:212 - "GET / HTTP/1.1" 200 13234

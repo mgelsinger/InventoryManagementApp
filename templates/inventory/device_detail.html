@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+
+{% block title %}{{ device.asset_tag }} - IT Inventory System{% endblock %}
+{% block page_title %}{{ device.asset_tag }}{% endblock %}
+
+{% block page_actions %}
+<div class="btn-group" role="group">
+    <a href="{% url 'inventory:device_update' device.pk %}" class="btn btn-primary">
+        <i class="bi bi-pencil"></i>
+        Edit
+    </a>
+    <a href="{% url 'inventory:device_delete' device.pk %}" class="btn btn-danger delete-confirm">
+        <i class="bi bi-trash"></i>
+        Delete
+    </a>
+    <a href="{% url 'inventory:device_list' %}" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i>
+        Back to List
+    </a>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <!-- Device Details -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-pc-display"></i>
+                    Device Details
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Asset Tag:</strong> {{ device.asset_tag }}</p>
+                        <p><strong>Model:</strong> {{ device.model }}</p>
+                        <p><strong>Category:</strong> {{ device.category.name|default:"Not specified" }}</p>
+                        <p><strong>Status:</strong> 
+                            <span class="badge bg-{{ device.status|yesno:'success,warning,danger,secondary' }}">
+                                {{ device.get_status_display }}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Serial Number:</strong> {{ device.serial_number|default:"Not specified" }}</p>
+                        <p><strong>Location:</strong> {{ device.location|default:"Not specified" }}</p>
+                        <p><strong>Assigned To:</strong> {{ device.assigned_to.get_full_name|default:"Not assigned" }}</p>
+                        <p><strong>Condition:</strong> {{ device.get_condition_display }}</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <p><strong>Purchase Date:</strong> {{ device.purchase_date|default:"Not specified" }}</p>
+                        <p><strong>Purchase Price:</strong> {{ device.purchase_price|default:"Not specified" }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Warranty Expiry:</strong> {{ device.warranty_expiry|default:"Not specified" }}</p>
+                        <p><strong>Next Maintenance:</strong> {{ device.next_maintenance|default:"Not scheduled" }}</p>
+                    </div>
+                </div>
+                {% if device.notes %}
+                <div class="mt-3">
+                    <h6>Notes:</h6>
+                    <p>{{ device.notes }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Software Installations -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-download"></i>
+                    Software Installations ({{ software_installations.count }})
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if software_installations %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Version</th>
+                                <th>Installed By</th>
+                                <th>Installation Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for installation in software_installations %}
+                            <tr>
+                                <td>{{ installation.software.name }}</td>
+                                <td>{{ installation.software.version }}</td>
+                                <td>{{ installation.installed_by.get_full_name|default:installation.installed_by.username }}</td>
+                                <td>{{ installation.installation_date }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">No software installations found.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Maintenance Records -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-tools"></i>
+                    Maintenance Records ({{ maintenance_records.count }})
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if maintenance_records %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Scheduled Date</th>
+                                <th>Performed Date</th>
+                                <th>Performed By</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for record in maintenance_records %}
+                            <tr>
+                                <td>{{ record.get_maintenance_type_display }}</td>
+                                <td>{{ record.scheduled_date }}</td>
+                                <td>{{ record.performed_date|default:"Not performed" }}</td>
+                                <td>{{ record.performed_by.get_full_name|default:"Not assigned" }}</td>
+                                <td>
+                                    {% if record.performed_date %}
+                                        <span class="badge bg-success">Completed</span>
+                                    {% else %}
+                                        <span class="badge bg-warning">Pending</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">No maintenance records found.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <!-- Status Card -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-info-circle"></i>
+                    Status
+                </h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Warranty Status:</strong>
+                    {% if device.is_under_warranty %}
+                        <span class="badge bg-success">Under Warranty</span>
+                    {% else %}
+                        <span class="badge bg-danger">Warranty Expired</span>
+                    {% endif %}
+                </p>
+                <p><strong>Maintenance Status:</strong>
+                    {% if device.needs_maintenance %}
+                        <span class="badge bg-warning">Needs Maintenance</span>
+                    {% else %}
+                        <span class="badge bg-success">Maintenance Up to Date</span>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-lightning"></i>
+                    Quick Actions
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="{% url 'inventory:maintenance_create' %}" class="btn btn-outline-primary">
+                        <i class="bi bi-tools"></i>
+                        Schedule Maintenance
+                    </a>
+                    <button class="btn btn-outline-success" onclick="quickAction('mark_active')">
+                        <i class="bi bi-check-circle"></i>
+                        Mark Active
+                    </button>
+                    <button class="btn btn-outline-warning" onclick="quickAction('mark_maintenance')">
+                        <i class="bi bi-wrench"></i>
+                        Mark for Maintenance
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function quickAction(action) {
+    if (confirm('Are you sure you want to perform this action?')) {
+        fetch('{% url "inventory:device_quick_actions" device.pk %}', {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'action=' + action
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                location.reload();
+            } else {
+                alert('Error: ' + data.message);
+            }
+        });
+    }
+}
+</script>
+{% endblock %}

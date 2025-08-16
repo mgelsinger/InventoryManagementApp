@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load django_tables2 %}
+{% load crispy_forms_tags %}
+
+{% block title %}Devices - IT Inventory Management{% endblock %}
+{% block page_title %}Devices{% endblock %}
+
+{% block page_actions %}
+<div class="btn-toolbar mb-2 mb-md-0">
+    <div class="btn-group me-2">
+        <a href="{% url 'inventory:device_create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i>
+            Add Device
+        </a>
+        <a href="{% url 'inventory:export_devices' %}" class="btn btn-outline-secondary">
+            <i class="bi bi-download"></i>
+            Export
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-pc-display"></i>
+                    Device Inventory
+                    <span class="badge bg-primary ms-2">{{ total_devices }} Total</span>
+                    <span class="badge bg-success ms-1">{{ active_devices }} Active</span>
+                </h5>
+            </div>
+            <div class="card-body">
+                <!-- Filter Form -->
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="card-title mb-0">
+                                    <i class="bi bi-funnel"></i>
+                                    Filters
+                                </h6>
+                            </div>
+                            <div class="card-body">
+                                <form method="get" class="row g-3">
+                                    <div class="col-md-3">
+                                        {{ filter.form.asset_tag|as_crispy_field }}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{ filter.form.model|as_crispy_field }}
+                                    </div>
+                                    <div class="col-md-2">
+                                        {{ filter.form.status|as_crispy_field }}
+                                    </div>
+                                    <div class="col-md-2">
+                                        {{ filter.form.category|as_crispy_field }}
+                                    </div>
+                                    <div class="col-md-2">
+                                        {{ filter.form.location|as_crispy_field }}
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="bi bi-search"></i>
+                                            Filter
+                                        </button>
+                                        <a href="{% url 'inventory:device_list' %}" class="btn btn-outline-secondary">
+                                            <i class="bi bi-x-circle"></i>
+                                            Clear
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Device Table -->
+                <div class="table-responsive">
+                    {% render_table table %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Locations - IT Inventory System{% endblock %}
+{% block page_title %}Locations{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-geo-alt"></i>
+                    Device Locations
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if locations %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Location Name</th>
+                                <th>Building</th>
+                                <th>Room</th>
+                                <th>Device Count</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for location in locations %}
+                            <tr>
+                                <td>{{ location.name }}</td>
+                                <td>{{ location.building|default:"Not specified" }}</td>
+                                <td>{{ location.room|default:"Not specified" }}</td>
+                                <td>
+                                    <span class="badge bg-primary">{{ location.device_count }}</span>
+                                </td>
+                                <td>
+                                    <a href="{% url 'inventory:device_list' %}?location={{ location.id }}" class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-eye"></i>
+                                        View Devices
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">No locations found.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

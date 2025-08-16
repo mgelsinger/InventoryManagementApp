@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Delete {{ object.name }} - IT Inventory System{% endblock %}
+{% block page_title %}Delete Software{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    Confirm Deletion
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="mb-3">Are you sure you want to delete the software "<strong>{{ object.name }}</strong>"?</p>
+                
+                <div class="alert alert-warning">
+                    <h6><i class="bi bi-exclamation-triangle"></i> Warning</h6>
+                    <p class="mb-0">This action cannot be undone. All associated data will be permanently deleted.</p>
+                </div>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{% url 'inventory:software_list' %}" class="btn btn-secondary me-md-2">
+                            <i class="bi bi-x-circle"></i>
+                            Cancel
+                        </a>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-trash"></i>
+                            Delete Software
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

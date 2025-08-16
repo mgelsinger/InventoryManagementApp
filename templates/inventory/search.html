@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Search - IT Inventory System{% endblock %}
+{% block page_title %}Search Results{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <!-- Search Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-search"></i>
+                    Search Inventory
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="get" class="row g-3">
+                    <div class="col-md-8">
+                        <input type="text" name="q" class="form-control" placeholder="Search for devices, software, locations..." value="{{ query }}">
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-search"></i>
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if query %}
+        <!-- Search Results -->
+        <div class="row">
+            <!-- Devices -->
+            {% if results.devices %}
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="bi bi-pc-display"></i>
+                            Devices ({{ results.devices.count }})
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            {% for device in results.devices %}
+                            <a href="{% url 'inventory:device_detail' device.pk %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">{{ device.asset_tag }}</h6>
+                                    <small class="text-muted">{{ device.get_status_display }}</small>
+                                </div>
+                                <p class="mb-1">{{ device.model }}</p>
+                                <small class="text-muted">{{ device.location|default:"No location" }}</small>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Software -->
+            {% if results.software %}
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="bi bi-box"></i>
+                            Software ({{ results.software.count }})
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            {% for software in results.software %}
+                            <a href="{% url 'inventory:software_detail' software.pk %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">{{ software.name }}</h6>
+                                    <small class="text-muted">{{ software.version }}</small>
+                                </div>
+                                <p class="mb-1">{{ software.vendor|default:"No vendor" }}</p>
+                                <small class="text-muted">{{ software.get_license_type_display }}</small>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Locations -->
+            {% if results.locations %}
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="bi bi-geo-alt"></i>
+                            Locations ({{ results.locations.count }})
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            {% for location in results.locations %}
+                            <a href="{% url 'inventory:device_list' %}?location={{ location.id }}" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">{{ location.name }}</h6>
+                                </div>
+                                <p class="mb-1">{{ location.building|default:"No building" }}</p>
+                                <small class="text-muted">{{ location.room|default:"No room" }}</small>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        {% if not results.devices and not results.software and not results.locations %}
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i>
+            No results found for "{{ query }}". Try searching with different keywords.
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

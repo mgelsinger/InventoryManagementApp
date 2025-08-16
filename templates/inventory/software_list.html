@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load django_tables2 %}
+{% load crispy_forms_tags %}
+
+{% block title %}Software - IT Inventory System{% endblock %}
+{% block page_title %}Software{% endblock %}
+
+{% block page_actions %}
+<div class="btn-group" role="group">
+    <a href="{% url 'inventory:software_create' %}" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i>
+        Add Software
+    </a>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <!-- Statistics Cards -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Total Software</h5>
+                        <div class="stats-number">{{ total_software }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Expiring Licenses</h5>
+                        <div class="stats-number">{{ expiring_licenses }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-funnel"></i>
+                    Filter Software
+                </h5>
+            </div>
+            <div class="card-body">
+                {% crispy filter.form %}
+            </div>
+        </div>
+
+        <!-- Software Table -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-box"></i>
+                    Software List
+                </h5>
+            </div>
+            <div class="card-body">
+                {% render_table table %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

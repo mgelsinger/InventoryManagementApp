@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load django_tables2 %}
+{% load crispy_forms_tags %}
+
+{% block title %}Maintenance - IT Inventory System{% endblock %}
+{% block page_title %}Maintenance Records{% endblock %}
+
+{% block page_actions %}
+<div class="btn-group" role="group">
+    <a href="{% url 'inventory:maintenance_create' %}" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i>
+        Add Maintenance
+    </a>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <!-- Statistics Cards -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pending Maintenance</h5>
+                        <div class="stats-number">{{ pending_maintenance }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-funnel"></i>
+                    Filter Maintenance Records
+                </h5>
+            </div>
+            <div class="card-body">
+                {% crispy filter.form %}
+            </div>
+        </div>
+
+        <!-- Maintenance Table -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-tools"></i>
+                    Maintenance Records
+                </h5>
+            </div>
+            <div class="card-body">
+                {% render_table table %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

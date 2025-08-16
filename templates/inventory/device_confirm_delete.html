@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Delete {{ object.asset_tag }} - IT Inventory System{% endblock %}
+{% block page_title %}Delete Device{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    Confirm Deletion
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="mb-3">Are you sure you want to delete the device "<strong>{{ object.asset_tag }}</strong>"?</p>
+                
+                <div class="alert alert-info">
+                    <h6><i class="bi bi-info-circle"></i> Device Details</h6>
+                    <p class="mb-1"><strong>Asset Tag:</strong> {{ object.asset_tag }}</p>
+                    <p class="mb-1"><strong>Model:</strong> {{ object.model }}</p>
+                    <p class="mb-1"><strong>Status:</strong> {{ object.get_status_display }}</p>
+                    <p class="mb-0"><strong>Location:</strong> {{ object.location|default:"Not specified" }}</p>
+                </div>
+
+                <div class="alert alert-warning">
+                    <h6><i class="bi bi-exclamation-triangle"></i> Warning</h6>
+                    <p class="mb-0">This action cannot be undone. All associated data including software installations and maintenance records will be permanently deleted.</p>
+                </div>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{% url 'inventory:device_list' %}" class="btn btn-secondary me-md-2">
+                            <i class="bi bi-x-circle"></i>
+                            Cancel
+                        </a>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-trash"></i>
+                            Delete Device
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

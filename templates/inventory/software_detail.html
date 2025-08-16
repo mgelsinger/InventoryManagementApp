@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}{{ software.name }} - IT Inventory System{% endblock %}
+{% block page_title %}{{ software.name }}{% endblock %}
+
+{% block page_actions %}
+<div class="btn-group" role="group">
+    <a href="{% url 'inventory:software_update' software.pk %}" class="btn btn-primary">
+        <i class="bi bi-pencil"></i>
+        Edit
+    </a>
+    <a href="{% url 'inventory:software_delete' software.pk %}" class="btn btn-danger delete-confirm">
+        <i class="bi bi-trash"></i>
+        Delete
+    </a>
+    <a href="{% url 'inventory:software_list' %}" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i>
+        Back to List
+    </a>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <!-- Software Details -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-box"></i>
+                    Software Details
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Name:</strong> {{ software.name }}</p>
+                        <p><strong>Version:</strong> {{ software.version }}</p>
+                        <p><strong>Vendor:</strong> {{ software.vendor|default:"Not specified" }}</p>
+                        <p><strong>License Type:</strong> {{ software.get_license_type_display }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>License Key:</strong> {{ software.license_key|default:"Not specified" }}</p>
+                        <p><strong>License Expiry:</strong> {{ software.license_expiry|default:"Not specified" }}</p>
+                        <p><strong>Seats Available:</strong> {{ software.available_seats }}</p>
+                        <p><strong>Purchase Date:</strong> {{ software.purchase_date|default:"Not specified" }}</p>
+                    </div>
+                </div>
+                {% if software.notes %}
+                <div class="mt-3">
+                    <h6>Notes:</h6>
+                    <p>{{ software.notes }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Installations -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-download"></i>
+                    Installations ({{ installations.count }})
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if installations %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Device</th>
+                                <th>Installed By</th>
+                                <th>Installation Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for installation in installations %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'inventory:device_detail' installation.device.pk %}">
+                                        {{ installation.device.asset_tag }}
+                                    </a>
+                                </td>
+                                <td>{{ installation.installed_by.get_full_name|default:installation.installed_by.username }}</td>
+                                <td>{{ installation.installation_date }}</td>
+                                <td>
+                                    <span class="badge bg-success">Active</span>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">No installations found.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <!-- Status Card -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-info-circle"></i>
+                    Status
+                </h5>
+            </div>
+            <div class="card-body">
+                <p><strong>License Status:</strong>
+                    {% if software.is_expired %}
+                        <span class="badge bg-danger">Expired</span>
+                    {% elif software.license_expiry %}
+                        <span class="badge bg-warning">Expiring Soon</span>
+                    {% else %}
+                        <span class="badge bg-success">Valid</span>
+                    {% endif %}
+                </p>
+                <p><strong>Availability:</strong>
+                    {% if software.available_seats > 0 %}
+                        <span class="badge bg-success">{{ software.available_seats }} seats available</span>
+                    {% else %}
+                        <span class="badge bg-danger">No seats available</span>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

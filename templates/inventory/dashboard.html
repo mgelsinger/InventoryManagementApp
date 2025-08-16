@@ -1,0 +1,239 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - IT Inventory Management{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Statistics Cards -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card h-100">
+            <div class="card-body text-center">
+                <div class="stats-number">{{ total_devices }}</div>
+                <div class="text-white-50">Total Devices</div>
+                <small class="text-white-75">{{ active_devices }} Active</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card h-100">
+            <div class="card-body text-center">
+                <div class="stats-number">{{ total_software }}</div>
+                <div class="text-white-50">Software Licenses</div>
+                <small class="text-white-75">{{ expiring_licenses }} Expiring Soon</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card h-100">
+            <div class="card-body text-center">
+                <div class="stats-number">{{ devices_needing_maintenance }}</div>
+                <div class="text-white-50">Need Maintenance</div>
+                <small class="text-white-75">{{ pending_maintenance }} Pending</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card stats-card h-100">
+            <div class="card-body text-center">
+                <div class="stats-number">{{ devices_under_warranty }}</div>
+                <div class="text-white-50">Under Warranty</div>
+                <small class="text-white-75">{{ expired_licenses }} Licenses Expired</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Device Status Breakdown -->
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-pie-chart"></i>
+                    Device Status Breakdown
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Count</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for status in status_breakdown %}
+                            <tr>
+                                <td>
+                                    <span class="badge bg-{% if status.status == 'active' %}success{% elif status.status == 'maintenance' %}warning{% elif status.status == 'retired' %}danger{% else %}secondary{% endif %}">
+                                        {{ status.status|title }}
+                                    </span>
+                                </td>
+                                <td>{{ status.count }}</td>
+                                <td>{{ status.count|floatformat:0 }}%</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Category Breakdown -->
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-tags"></i>
+                    Top Categories
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Device Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for category in category_breakdown %}
+                            <tr>
+                                <td>{{ category.name }}</td>
+                                <td>
+                                    <span class="badge bg-primary">{{ category.device_count }}</span>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Recent Devices -->
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-clock-history"></i>
+                    Recent Devices
+                </h5>
+                <a href="{% url 'inventory:device_list' %}" class="btn btn-sm btn-outline-primary">View All</a>
+            </div>
+            <div class="card-body">
+                {% if recent_devices %}
+                <div class="list-group list-group-flush">
+                    {% for device in recent_devices %}
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">{{ device.asset_tag }}</h6>
+                            <small class="text-muted">{{ device.model }}</small>
+                        </div>
+                        <div class="text-end">
+                            <span class="badge bg-{% if device.status == 'active' %}success{% elif device.status == 'maintenance' %}warning{% elif device.status == 'retired' %}danger{% else %}secondary{% endif %}">
+                                {{ device.status|title }}
+                            </span>
+                            <br>
+                            <small class="text-muted">{{ device.created_at|date:"M d, Y" }}</small>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="text-muted text-center">No recent devices</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Recent Maintenance -->
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-tools"></i>
+                    Recent Maintenance
+                </h5>
+                <a href="{% url 'inventory:maintenance_list' %}" class="btn btn-sm btn-outline-primary">View All</a>
+            </div>
+            <div class="card-body">
+                {% if recent_maintenance %}
+                <div class="list-group list-group-flush">
+                    {% for maintenance in recent_maintenance %}
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">{{ maintenance.device.asset_tag }}</h6>
+                            <small class="text-muted">{{ maintenance.maintenance_type|title }}</small>
+                        </div>
+                        <div class="text-end">
+                            <span class="badge bg-{% if maintenance.performed_date %}success{% elif maintenance.scheduled_date and maintenance.scheduled_date < now %}danger{% else %}info{% endif %}">
+                                {% if maintenance.performed_date %}Completed{% elif maintenance.scheduled_date and maintenance.scheduled_date < now %}Overdue{% else %}Scheduled{% endif %}
+                            </span>
+                            <br>
+                            <small class="text-muted">{{ maintenance.created_at|date:"M d, Y" }}</small>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="text-muted text-center">No recent maintenance</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Quick Actions -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-lightning"></i>
+                    Quick Actions
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 mb-2">
+                        <a href="{% url 'inventory:device_create' %}" class="btn btn-primary w-100">
+                            <i class="bi bi-plus-circle"></i>
+                            Add Device
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a href="{% url 'inventory:software_create' %}" class="btn btn-success w-100">
+                            <i class="bi bi-plus-circle"></i>
+                            Add Software
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a href="{% url 'inventory:maintenance_create' %}" class="btn btn-warning w-100">
+                            <i class="bi bi-plus-circle"></i>
+                            Schedule Maintenance
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a href="{% url 'inventory:export_devices' %}" class="btn btn-info w-100">
+                            <i class="bi bi-download"></i>
+                            Export Devices
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
